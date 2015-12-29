@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ItemsCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="97" height="97"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="97" height="97"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LQj-Te-9DB">
+                        <rect key="frame" x="0.0" y="0.0" width="97" height="97"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPm-oB-JXK">
+                        <rect key="frame" x="69" y="8" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Vx7-5e-vbg"/>
+                            <constraint firstAttribute="height" constant="20" id="xPf-RO-Djx"/>
+                        </constraints>
+                        <state key="normal" image="ks_1@2x"/>
+                        <connections>
+                            <action selector="icoBtn:" destination="gTV-IL-0wX" eventType="touchUpInside" id="r1c-yY-VSo"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LQj-Te-9DB" secondAttribute="bottom" id="CN9-NT-PhP"/>
+                <constraint firstItem="LQj-Te-9DB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HxP-CF-AEK"/>
+                <constraint firstItem="LQj-Te-9DB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Jrn-4i-pGZ"/>
+                <constraint firstItem="LQj-Te-9DB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SJq-tj-rzK"/>
+                <constraint firstAttribute="trailing" secondItem="lPm-oB-JXK" secondAttribute="trailing" constant="8" id="aCb-sU-OEO"/>
+                <constraint firstItem="LQj-Te-9DB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="aVG-YO-oy4"/>
+                <constraint firstAttribute="trailing" secondItem="LQj-Te-9DB" secondAttribute="trailing" id="eZ6-kw-nL8"/>
+                <constraint firstAttribute="bottom" secondItem="LQj-Te-9DB" secondAttribute="bottom" id="ekJ-2a-bS3"/>
+                <constraint firstAttribute="trailing" secondItem="LQj-Te-9DB" secondAttribute="trailing" id="jkj-2l-kqT"/>
+                <constraint firstItem="lPm-oB-JXK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="seE-aA-tog"/>
+            </constraints>
+            <connections>
+                <outlet property="icoBtn" destination="lPm-oB-JXK" id="fZE-dg-Enc"/>
+                <outlet property="icoImage" destination="LQj-Te-9DB" id="2sZ-XX-oGf"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ks_1@2x" width="16" height="16"/>
+    </resources>
+</document>
